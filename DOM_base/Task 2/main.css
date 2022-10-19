@@ -1,0 +1,17 @@
+.output {
+    width: 500px;
+    height: 300px;
+    background-color: red;
+}
+input {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    cursor: pointer;
+}
+h1 {
+    width: 1000px;
+    height: 200px;
+    margin: 50px;
+    color: brown;
+}
