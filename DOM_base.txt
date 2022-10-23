@@ -1,4 +1,4 @@
-Базовая работа с DOM-деревом:
+giБазовая работа с DOM-деревом:
 Что нужно знать для выполнения:
 - document.querySelector
 - element.onClick
