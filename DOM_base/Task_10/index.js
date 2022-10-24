@@ -221,9 +221,10 @@ body.insertAdjacentHTML("afterbegin", div);
 const bigObj = document.querySelector(".outside");
 const smallObj = document.querySelector(".inside");
 
-bigObj.onmouseenter = () => {
-    console.log ("outer");
-};
-smallObj.onmouseenter = () => {
-    console.log ("inner");
-};
+bigObj.addEventListener('click', function() {
+    console.log ('ouner', this);
+});
+smallObj.addEventListener('click', function(e) {
+    console.log ('inner', this);
+    e.stopPropagation();
+});
