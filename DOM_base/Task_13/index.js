@@ -22,31 +22,99 @@ smallObj.addEventListener('click', function(e) {
     e.stopPropagation();
 });
 
-const term = {
-    one : "секунда",
-    two : "секунды",
-    three : "секунд",
-};
+// const secTerm = {
+//     one : "секунда",
+//     two : "секунды",
+//     three : "секунд",
+// };
+//
+// const catTerm = {
+//     one : "кот",
+//     two : "кота",
+//     three : "котов",
+// };
+//
+// function getTerm (number, term) {
+//     const lastElemNum = +number.toString().slice(-1);
+//     const soLastElemNum = +number.toString().slice(-2, -1);
+//
+//     console.log(soLastElemNum)
+//
+//     if (soLastElemNum === 1) {
+//         return term.three;
+//     }
+//
+//     if (lastElemNum === 1) {
+//         return term.one;
+//     }
+//     if (lastElemNum > 1 && lastElemNum < 5){
+//         return term.two
+//     }
+//     return term.three;
+// };
+//
+// const count = 54456412;
+//
+// const result = getTerm(count, secTerm);
+// console.log(count,  result);
+//
+// function termGenerator(term) {
+//     const saveTerm = term;
+//     return function(number) {
+//         const lastElemNum = +number.toString().slice(-1);
+//         const soLastElemNum = +number.toString().slice(-2, -1);
+//         if (soLastElemNum === 1) {
+//             return number + " " + saveTerm.three;
+//         }
+//         if (lastElemNum === 1) {
+//             return number + " " + saveTerm.one;
+//         }
+//         if (lastElemNum > 1 && lastElemNum < 5){
+//             return number + " " + saveTerm.two
+//         }
+//         return number + " " + saveTerm.three;
+//     };
+// }
+//
+// const catsTerm = termGenerator(catTerm);
+// const secsTerm = termGenerator(secTerm);
+//
+// const result_1 = catsTerm(12);
+//
+// console.log(result_1);
+// console.log(catsTerm(7));
+// console.log(catsTerm(778951));
+// console.log(catsTerm(4));
+//
+// console.log(secsTerm(12));
+// console.log(secsTerm(7));
+// console.log(secsTerm(778951));
+// console.log(secsTerm(4));
 
-let namber = 12;
-
-const showTerm = function (namber, term) {
-
-    const stringNam = namber.toString();
-
-    const lastElemStr = stringNam.slice(-1);
-
-    const lastElemNum = +lastElemStr;
-
-    if (lastElemNum === 1){
-        return console.log (namber, term.one);
+function counterGenerator(init) {
+    let count = init;
+    return function() {
+        // console.log(count++);
+        return count++;
     }
-    if (lastElemNum >1 && lastElemNum <5){
-        return console.log (namber, term.two);
-    }
-    return console.log (namber, term.three);
-    
-};
-showTerm(namber, term)
+}
 
+const counter_1 = counterGenerator(5);
+const counter_2 = counterGenerator(-3);
+
+console.log(counter_1());
+console.log(counter_1());
+console.log(counter_1());
+
+console.log(counter_2());
+console.log(counter_2());
+console.log(counter_2());
+
+console.log(counter_1());
+console.log(counter_1());
+console.log(counter_1());
+
+let obj = { a: { b: 4 } };
+const some = obj.a;
+obj = 42;
 
