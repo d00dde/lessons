@@ -1,0 +1,15 @@
+.outside {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-color: blue;
+}
+.inside {
+    width: 100px;
+    height: 100px;
+    cursor: cell;
+    background-color: yellow; 
+}
