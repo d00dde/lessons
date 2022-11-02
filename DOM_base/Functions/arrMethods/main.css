@@ -1,0 +1,23 @@
+.users {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card.male {
+    background-color: blue;
+}
+
+.card.female {
+    background-color: pink;
+}
