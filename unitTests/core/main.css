@@ -1,0 +1,7 @@
+.failed {
+    background-color: red;
+}
+
+.passed {
+    background-color: green;
+}
