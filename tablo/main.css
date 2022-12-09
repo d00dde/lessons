@@ -1,0 +1,34 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field {
+    width: 510px;
+    height: 510px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.cell {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lamp {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.light {
+    background-color: red;
+    box-shadow: red 0 0 3px;
+}
