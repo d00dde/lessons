@@ -1,0 +1,18 @@
+.car {
+    position: absolute;
+}
+img {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    cursor: pointer;
+}
+.line {
+    height: 150px;
+    border: black 1px solid;
+}
+.board {
+    height: 70px;
+    font-size: 20px;
+    text-align: center;
+}

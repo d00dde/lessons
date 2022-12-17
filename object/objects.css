@@ -1,0 +1,12 @@
+img {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    cursor: pointer;
+}
+.car {
+    position: absolute;
+}
+.gun {
+    position: absolute;
+}
